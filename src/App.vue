@@ -1,5 +1,5 @@
 <template>
-    <Guide class="--side-by-side guide-options">
+    <Guide class="final-center">
         <template #default>
             <Card>
                 <Balance class="card-gap"><Logo /></Balance>
@@ -16,16 +16,16 @@
                 </ChartCard>
             </Card>
         </template>
-        <template #guide>
+        <!-- <template #guide>
             <MobileGuide />
-        </template>
+        </template> -->
     </Guide>
 </template>
 
 <script>
 import Card from './components/Card.vue'
 import Guide from './components/Guide.vue'
-import MobileGuide from './components/MobileGuide.vue'
+/* import MobileGuide from './components/MobileGuide.vue' */
 import Balance from './components/Balance.vue'
 import Logo from './components/Logo.vue'
 import ChartCard from './components/ChartCard.vue'
@@ -35,7 +35,7 @@ import Graph from './components/Graph.vue'
 export default {
   name: 'App',
   components: {
-    MobileGuide,
+    /* MobileGuide, */
     Guide,
     Card,
     Balance,
@@ -52,12 +52,18 @@ export default {
 </style>
 
 <style lang="scss" scoped>
-.guide-options {
+.final-center {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* for comparing to picture stuff */
+/* .guide-options {
     > * {
         flex: 0 0 auto;
-        /* margin: 0 auto; */
     }
-}
+} */
 .card-gap {
     margin-bottom: 1rem;
 }
