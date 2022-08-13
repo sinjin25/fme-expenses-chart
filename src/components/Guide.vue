@@ -1,6 +1,6 @@
 <template>
     <div id="guide">
-        <div class="ml">
+        <div>
             <slot></slot>
         </div>
         <div>
