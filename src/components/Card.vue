@@ -17,5 +17,9 @@ export default {
     padding-bottom: 3.4em;
     width: 375px;
     background: var(--cream);
+    @media only screen and (min-width: 768px) {
+        padding: 10rem 1em;
+        width: 575px;
+    }
 }
 </style>

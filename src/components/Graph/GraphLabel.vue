@@ -17,5 +17,8 @@ export default {
     justify-content: center;
     align-items: center;
     padding-bottom: .7rem;
+    @media only screen and (min-width: 768px) {
+        font-size: .75rem;
+    }
 }
 </style>

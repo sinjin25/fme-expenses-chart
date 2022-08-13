@@ -43,5 +43,15 @@ export default {
         display: flex;
         align-items: center;
     }
+    @media only screen and (min-width: 768px) {
+        padding: 1.5em;
+        &-title {
+            font-size: 1.05rem;
+            line-height: 1.6;
+        }
+        &-num {
+            font-size: 1.8rem;
+        }
+    }
 }
 </style>

@@ -61,5 +61,18 @@ export default {
             margin-right: auto;
         }
     }
+    @media only screen and (min-width: 768px) {
+        padding-top: 1.8rem;
+        padding-bottom: .5rem;
+        &-title {
+            font-size: 1.1rem;
+        }
+        &-num {
+            font-size: 2.6rem;
+        }
+        &-gain {
+            font-size: 1.1rem;
+        }
+    }
 }
 </style>

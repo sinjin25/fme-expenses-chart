@@ -49,12 +49,12 @@ export default {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: 165px 49px;
     &-bar {
-        padding: 0 .33em;
+        padding: 0 .4em;
     }
-}
-.outline {
-    outline: 2px solid black;
-    width: 100%;
-    height: 100%;
+    @media only screen and (min-width: 768px) {
+        padding-top: 1rem;
+        grid-template-rows: 165px 45px; // little nudge to the bottom
+        padding-bottom: .5rem;
+    }
 }
 </style>

@@ -34,5 +34,12 @@ export default {
         margin: 0 -.25em;
     }
     &-footer {}
+    @media only screen and (min-width: 768px) {
+        padding: 1.7em 2em;
+        /* height: 510px; */
+        &-head {
+            font-size: 1.8rem;
+        }
+    }
 }
 </style>
